@@ -33,6 +33,7 @@ export class Tab2Page implements AfterViewInit, OnDestroy{
         this.inicializarMapa();
       }
       this.actualizarMarker();
+      // Job Perez realizo esta funcionalidad
       this.obtenerDireccion();
       setTimeout(() => {
         this.map?.invalidateSize();

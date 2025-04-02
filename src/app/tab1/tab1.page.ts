@@ -28,6 +28,7 @@ export class Tab1Page {
           apellido: this.apellido,
           latitud: this.latitud,
           longitud: this.longitud,
+          // Job Perez estubo aqui 
         },
       });
     } else {
