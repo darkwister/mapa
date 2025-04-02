@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Agregar ubicacion
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,25 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Agregar ubicacion</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nombre" labelPlacement="floating" type="text" placeholder="Juan..." [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Apellido" labelPlacement="floating" type="text" placeholder="Perez..." [(ngModel)]="apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Latitud" labelPlacement="floating" type="number" placeholder="18.25..." [(ngModel)]="latitud"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Longitud" labelPlacement="floating" type="number" placeholder="-68.32..." [(ngModel)]="longitud"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="enviarData()" expand="block">
+    <ion-icon slot="start" name="add"></ion-icon>
+    Ver ubicacion...
+  </ion-button>
 </ion-content>
